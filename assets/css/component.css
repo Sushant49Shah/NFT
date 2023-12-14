@@ -1,0 +1,223 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono&family=Work+Sans&display=swap");
+
+:root {
+  --primary-color: #a259ff;
+  --success-color: #4ceb3a;
+  --warning-color: #f5f233;
+  --danger-color: #f44343;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Work Sans", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+}
+a {
+  text-decoration: none;
+}
+.primary-font {
+  font-family: "Space Mono", monospace;
+}
+.bold {
+  font-weight: 600;
+}
+.primary-font.bold {
+  font-weight: 700;
+}
+h1 {
+  font-size: 67px;
+  line-height: 110%;
+}
+h2 {
+  font-size: 51px;
+  line-height: 110%;
+}
+h3 {
+  font-size: 38px;
+  line-height: 120%;
+}
+h4 {
+  font-size: 28px;
+  line-height: 140%;
+}
+h5 {
+  font-size: 22px;
+  line-height: 160%;
+}
+h6 {
+  font-size: 18px;
+  line-height: 160%;
+}
+p,
+span.label {
+  font-size: 16px;
+  line-height: 140%;
+}
+.caption {
+  font-size: 12px;
+  line-height: 110%;
+}
+.white {
+  color: white;
+}
+.button {
+  display: inline-flex;
+  height: 60px;
+  padding: 0px 50px;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  flex-shrink: 0;
+  background: #848484;
+  outline: none;
+  border: 2px solid #000;
+  cursor: pointer;
+  text-decoration: none;
+  color: #000;
+  border-radius: 20px;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 140%;
+  color: #fff;
+  transition: all 0.2s ease;
+}
+.button-lg {
+  height: 72px;
+  font-size: 22px;
+}
+.button-md {
+  height: 60px;
+}
+.button-sm {
+  height: 46px;
+}
+.button-primary {
+  background: var(--primary-color);
+  border: 2px solid var(--primary-color);
+}
+.button-success {
+  background: var(--success-color);
+  border: 2px solid var(--success-color);
+}
+.button-warning {
+  background: var(--warning-color);
+  border: 2px solid var(--warning-color);
+}
+.button-danger {
+  background: var(--danger-color);
+  border: 2px solid var(--danger-color);
+}
+.button-white {
+  color: #2b2b2b;
+  background: white;
+  border: 2px solid white;
+}
+.button-outline {
+  background: #2b2b2b;
+}
+/* 
+.button-hover-primary {
+  position: relative !important;
+  overflow: hidden;
+}
+.button-hover-primary::before {
+  background: white;
+  position: absolute;
+  content: "";
+  width: 600px;
+  height: 600px;
+  top: 50%;
+  left: 50%;
+  z-index: -1;
+  transform: translate(-50%, -50%) rotate(45deg);
+  transition: all 0.5s ease;
+}
+.button-hover-primary:hover::before {
+  height: 300%;
+  transition: all 0.5s ease;
+}
+.button-hover-primary:hover{
+    color: var(--primary-color);
+} */
+.button:hover{
+    transform: translateY(-2px);
+    transition: all 0.2s ease;
+}
+.button-icon::before {
+  content: "";
+  display: block;
+  height: 20px;
+  width: 20px;
+}
+.button-rocket::before {
+  background: url("../images/icon/RocketLaunch.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  filter: grayscale(100%) sepia(100%) hue-rotate(190deg) saturate(900%);
+}
+.button-user::before {
+  background: url("../images/icon/User.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.button-envelope::before {
+  background: url("../images/icon/EnvelopeSimple.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.button-eye::before {
+  background: url("../images/icon/Eye.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.button-eye-purple::before {
+  background: url("../images/icon/EyePurpule.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+section {
+  padding: 80px 120px;
+}
+section.default-section {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+.section-heading-button {
+  display: flex;
+  align-items: flex-end;
+  gap: 100px;
+  justify-content: space-between;
+}
+.section-heading {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+main {
+  background: #2b2b2b;
+  color: #fff;
+}
+img {
+  width: 100%;
+  height: auto;
+}
+.center-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.center-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
